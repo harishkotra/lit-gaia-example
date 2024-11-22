@@ -21,8 +21,8 @@ This project demonstrates how to integrate Lit Protocol with Gaia's AI capabilit
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/lit-protocol-ai
-cd lit-protocol-ai
+git clone https://github.com/yourusername/lit-gaia-example
+cd lit-gaia-example
 ```
 
 2. Install dependencies:
@@ -39,7 +39,7 @@ PKP_PUBLIC_KEY=your_pkp_public_key_here  # Optional, will mint new one if not pr
 ## Project Structure
 
 ```
-lit-protocol-ai/
+lit-gaia-example/
 ├── index.js          # Main application file
 ├── litAction.js      # Lit Action code for AI integration
 ├── .env             # Environment variables
