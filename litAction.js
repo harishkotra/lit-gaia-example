@@ -1,15 +1,15 @@
 /**
  * Main execution function for the Lit Action
- * Sends a prompt to an AI model and processes the response
+ * Sends a prompt to an Gaia's API running Llama 3.1 8B model and processes the response
  */
 const go = async () => {
   try {
-    // Prepare message structure for AI model
+    // Prepare message structure for Gaia's API running Llama 3.1 8B model
     const messages = [
       {
         role: "system",
         content:
-          "You are an AI assistant that helps people make informed blockchain trading decisions. Only answer with a single sentence.",
+          "You are an AI assistant that helps people make informed blockchain trading decisions. Only answer with a single sentence. Ensure to give them a response but remind them to act with caution.",
       },
       {
         role: "user",
@@ -17,7 +17,7 @@ const go = async () => {
       },
     ];
 
-    // Make API request to AI model
+    // Make API request to Gaia's API running Llama 3.1 8B model
     const response = await fetch(
       "https://llama3b.gaia.domains/v1/chat/completions",
       {
